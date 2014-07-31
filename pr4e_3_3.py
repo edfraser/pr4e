@@ -1,3 +1,5 @@
+# Determine grade letter from score
+
 Score = raw_input('Enter Score:')
 try: score = float(Score)
 except: score = -1

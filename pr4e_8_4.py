@@ -1,14 +1,13 @@
+# Generate and print list of unique words from text file
+
 fname = raw_input('Enter file name: ')
 if len(fname) < 1 : fname = 'romeo.txt'
-    
 try: fh = open(fname) 
 except: 
     print 'File not found: ', fname
     exit()
 
-lst = list()
-unique_lst = list()
-
+unique_lst = []
 for line in fh:
     lst = line.split()
     for word in range(len(lst)):

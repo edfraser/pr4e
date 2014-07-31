@@ -1,11 +1,12 @@
-# Use words.txt as the file name
-fname = raw_input("Enter file name: ")
+# Using methods, example
 
-try:
-    fh = open(fname)
+fname = raw_input("Enter file name: ")
+if len(fname) == 0: fname = 'words.txt'
+
+try: fh = open(fname)
 except:
     print 'File cannot be opened:', fname
     exit()
 
-for line in fh:
-    print line.rstrip().upper()
+for line in fh: print line.rstrip().upper()
+

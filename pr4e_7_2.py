@@ -1,10 +1,9 @@
-# Use the file name mbox-short.txt as the file name
-fname = raw_input("Enter file name: ")
-if len(fname) == 0:
-    fname = 'mbox-short.txt'
+# From email server header file
+# Count, accumulate and calculate average spam confidence level
 
-try:
-    fh = open(fname)
+fname = raw_input("Enter file name: ")
+if len(fname) == 0: fname = 'mbox-short.txt'
+try: fh = open(fname)
 except:
     print 'File cannot be opened:', fname
     exit()

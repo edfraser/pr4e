@@ -1,3 +1,5 @@
+# Create function: convert previous letter grade calculator
+
 def computegrade(score):
     try: score = float(score)
     except: score = -1
@@ -9,4 +11,5 @@ def computegrade(score):
     elif (score >= 60): return ('D')
     else: return ('F')
 
+# Use function:
 print computegrade(raw_input('Enter Score:'))
